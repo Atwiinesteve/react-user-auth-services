@@ -1,19 +1,17 @@
 // importing react modules
-import React from 'react';
+import React from "react";
 
 // importing react components.
-import SignIn from './components/SignIn';
-import SignUp from './components/Signup';
+import Home from "./components/Home";
 
 // app component
 function App() {
 
-  return (
-    <>
-      <SignIn />
-      {/* <SignUp /> */}
-    </>
-  )
+	return (
+		<>
+			<Home />
+		</>
+	);
 }
 
 // exporting component
