@@ -2,7 +2,12 @@
 import { initializeApp } from "firebase/app";
 
 // get user auth services
-import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import {
+	getAuth,
+	GoogleAuthProvider,
+	GithubAuthProvider,
+	signInWithPopup,
+} from "firebase/auth";
 
 // firebase configurations
 const firebaseConfig = {
@@ -23,6 +28,9 @@ export const auth = getAuth(app);
 // google provider
 const provider = new GoogleAuthProvider();
 
+// github provider
+const githubProvider = new GithubAuthProvider()
+
 // signin with Google
 export const signInWithGoogle = () =>
 	signInWithPopup(auth, provider)
@@ -32,3 +40,14 @@ export const signInWithGoogle = () =>
 		.catch((error) => {
 			console.log(error.message);
 		});
+
+// signin with GitHub
+export const signInWithGithub = () => {
+    signInWithPopup(auth, githubProvider)
+        .then((user) => {
+            console.log(user)
+        })
+        .catch((error) => {
+            console.log(error);
+        })
+};
