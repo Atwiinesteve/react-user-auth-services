@@ -1,6 +1,8 @@
 // importing react
 import React from "react";
-import { Link } from "react-router-dom";
+
+// import firebase functions
+// import { signInWithGoogle } from '../../'
 
 // importing styles
 import "../styles/SignIn.css";
@@ -23,7 +25,7 @@ function SignIn() {
 					</div>
 				</div>
 				<div className="button--area">
-					<button type="button">Signin with FaceBook</button>
+					<button type="button">Signin with Facebook</button>
 					<button type="button">Signin with Google</button>
 				</div>
 				<div className="message">

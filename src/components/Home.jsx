@@ -9,8 +9,8 @@ import SignUp from "../components/SignUp";
 function Home() {
 	return (
 		<>
-			<SignIn />
-			{/* <SignUp /> */}
+			{/* <SignIn /> */}
+			<SignUp />
 		</>
 	);
 }
