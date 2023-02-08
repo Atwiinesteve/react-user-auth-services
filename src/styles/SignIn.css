@@ -82,3 +82,8 @@
     font-size: 1.1rem;
     cursor: pointer;
 }
+
+.signin--form .message {
+    margin: 1rem;
+    text-align: center;
+}
