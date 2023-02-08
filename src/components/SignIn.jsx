@@ -6,23 +6,15 @@ import '../styles/SignIn.css';
 
 function SignIn() {
   return (
-    <div className="sign--form">
+    <div className="signin--form">
         <form>
             <div className="form--header">
                 <h2>Login to Account</h2>
             </div>
             <div className="input--areas">
                 <div className="input--area">
-                    <label htmlFor="fullName">Full Name</label>
-                    <input type="text" className="input-control" />
-                </div>
-                <div className="input--area">
                     <label htmlFor="email">Email</label>
                     <input type="email" className="input-control" />
-                </div>
-                <div className="input--area">
-                    <label htmlFor="username">Username</label>
-                    <input type="text" className="input-control" />
                 </div>
                 <div className="input--area">
                     <label htmlFor="password">Password</label>
@@ -30,7 +22,8 @@ function SignIn() {
                 </div>
             </div>
             <div className="button--area">
-                <button type="button">Login</button>
+                <button type="button">Signin with FaceBook</button>
+                <button type="button">Signin with Google</button>
             </div>
         </form>
     </div>
