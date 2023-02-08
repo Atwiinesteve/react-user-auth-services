@@ -1,12 +1,12 @@
 // importing react modules.
-import React from 'react';
+import React from "react";
 
-import { signInWithGoogle } from '../firebase/firebase';
+import { signInWithGoogle, signInWithGithub } from "../firebase/firebase";
 
-import '../styles/SignUp.css'
+import "../styles/SignUp.css";
 
 function SignUp() {
-  return (
+	return (
 		<div className="signin--form">
 			<form>
 				<div className="form--header">
@@ -23,18 +23,19 @@ function SignUp() {
 					</div>
 				</div>
 				<div className="button--area">
-					<button type="button">Signin with GitHub</button>
-					<button onClick={signInWithGoogle} type="button">Signin with Google</button>
+					<button onClick={signInWithGithub} type="button">
+						Signin with GitHub
+					</button>
+					<button onClick={signInWithGoogle} type="button">
+						Signin with Google
+					</button>
 				</div>
 				<div className="message">
-					<p>
-						Already have an Account?, Signin please.
-					</p>
+					<p>Already have an Account?, Signin please.</p>
 				</div>
 			</form>
 		</div>
 	);
 }
 
-
-export default SignUp
+export default SignUp;
