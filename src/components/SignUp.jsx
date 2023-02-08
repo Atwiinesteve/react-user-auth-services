@@ -1,6 +1,9 @@
 // importing react modules.
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import { signInWithGoogle } from '../firebase/firebase';
+
+import '../styles/SignUp.css'
 
 function SignUp() {
   return (
@@ -20,8 +23,8 @@ function SignUp() {
 					</div>
 				</div>
 				<div className="button--area">
-					<button type="button">Signin with FaceBook</button>
-					<button type="button">Signin with Google</button>
+					<button type="button">Signin with GitHub</button>
+					<button onClick={signInWithGoogle} type="button">Signin with Google</button>
 				</div>
 				<div className="message">
 					<p>
@@ -32,5 +35,6 @@ function SignUp() {
 		</div>
 	);
 }
+
 
 export default SignUp
